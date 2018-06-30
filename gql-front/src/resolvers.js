@@ -1,4 +1,4 @@
-// import connectors from './connectors';
+import Users from './connectors';
 
 const resolvers = {
     Query : {
@@ -7,8 +7,8 @@ const resolvers = {
         },
     },
     Mutation : {
-        addUser() {
-            return Users.addOne();
+        addUser(_, { mail, username, firstname, lastname, password }) {
+            return Users.addOne({ mail, username, firstname, lastname, password });
         },
     },
 }

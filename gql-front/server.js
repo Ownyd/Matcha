@@ -1,7 +1,7 @@
 import express from 'express';
 import { apolloServer } from 'graphql-tools';
-//import Schema from './src/schema';
-//import Resolvers from './src/resolvers';
+import Schema from './src/schema';
+import Resolvers from './src/resolvers';
 const GRAPHQL_PORT = 8080;
 
 var graphQLServer = express();

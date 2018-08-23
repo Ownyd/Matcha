@@ -1,0 +1,41 @@
+{
+  "name": "apollo-server",
+  "version": "0.1.0",
+  "description": "apollo_server",
+  "scripts": {
+    "start": "nodemon ./server.js --exec babel-node"
+  },
+  "keywords": [
+    "Node.js",
+    "Javascript",
+    "GraphQL",
+    "Express",
+    "Apollo",
+    "Meteor"
+  ],
+  "author": "tlux",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-engine": "0.8.1",
+    "apollo-server": "2.0.0-beta.1",
+    "apollo-server-express": "2.0.0-beta.1",
+    "babel-core": "^6.5.2",
+    "babel-loader": "6.2.3",
+    "babel-polyfill": "6.5.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "lodash": "^4.11.1",
+    "nodemon": "^1.9.1",
+    "webpack": "^1.13.1"
+  }
+}

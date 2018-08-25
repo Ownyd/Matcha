@@ -2,10 +2,10 @@ import { gql } from 'apollo-server';
 import addUser from '../services/addUser';
 
 export const Mutation = gql`
-  addUser: User
+  addUser(name: String, gender: String): User
 `;
 
 export const Resolvers = {
-  addUser: () =>
-    addUser(),
+  addUser: (_, user) =>
+    addUser(user),
 };

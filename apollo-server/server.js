@@ -1,5 +1,8 @@
+import mongoose from 'mongoose';
 import { ApolloServer, makeExecutableSchema, mergeSchemas } from 'apollo-server';
 import { typeDefs, resolvers } from './src';
+
+mongoose.connect('mongodb://localhost:27017/matcha');
 
 const newSchemaBuiltWithMakeExecutableSchema = makeExecutableSchema({
   typeDefs,

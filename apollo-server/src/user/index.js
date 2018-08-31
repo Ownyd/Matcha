@@ -1,5 +1,5 @@
-import * as queries from './queries/userQuery';
-import * as mutations from './mutations/userMutations';
+import * as queries from './userQueries';
+import * as mutations from './userMutations';
 import userTypes from './userTypes';
 
 export const Query = queries.Query;

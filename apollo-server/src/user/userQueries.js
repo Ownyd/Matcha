@@ -1,5 +1,5 @@
 import { gql } from 'apollo-server';
-import fetchAllUsers from '../services/fetchAllUsers';
+import fetchAllUsers from './services/fetchAllUsers';
 
 export const Query = gql`
   allUsers: [User]
